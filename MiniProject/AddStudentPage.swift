@@ -4,7 +4,7 @@ struct AddStudentPage: View {
 	@State private var firstName: String = ""
 	@State private var lastName: String = ""
 	@State private var asuID: String = ""
-	@State private var selectedImage: UIImage? = nil // Change to UIImage to handle Base64 conversion
+	@State private var selectedImage: UIImage? = nil
 	@State private var isImagePickerActive = false
 	@State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
 	
@@ -132,7 +132,7 @@ struct AddStudentPage: View {
 }
 
 struct ImagePickerView: View {
-	@Binding var selectedImage: UIImage? // Change to UIImage
+	@Binding var selectedImage: UIImage?
 	var sourceType: UIImagePickerController.SourceType
 	@Environment(\.presentationMode) var presentationMode
 	

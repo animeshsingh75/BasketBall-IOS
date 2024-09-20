@@ -1,5 +1,5 @@
 //
-//  Student 2.swift
+//  Student.swift
 //  MiniProject
 //
 //  Created by Animesh Singh on 9/19/24.

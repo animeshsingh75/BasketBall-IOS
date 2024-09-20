@@ -8,10 +8,7 @@ struct MainPageView: View {
 					.font(.largeTitle)
 					.fontWeight(.bold)
 					.padding(.top, 50)
-				
 				Spacer()
-				
-				// Navigate to View List Page
 				NavigationLink(destination: ViewListPage()) {
 					Text("View List")
 						.frame(minWidth: 0, maxWidth: .infinity)
@@ -20,8 +17,6 @@ struct MainPageView: View {
 						.foregroundColor(.white)
 						.cornerRadius(10)
 				}
-				
-				// Navigate to Add a Student Page
 				NavigationLink(destination: AddStudentPage()) {
 					Text("Add a Student")
 						.frame(minWidth: 0, maxWidth: .infinity)
@@ -34,7 +29,7 @@ struct MainPageView: View {
 				Spacer()
 			}
 			.padding()
-			.navigationBarHidden(true) // Hides the back button on the main page
+			.navigationBarHidden(true) 
 		}
 	}
 }
