@@ -49,6 +49,7 @@ struct ViewListPage: View {
 		}
 		.onAppear {
 			students = Utils.loadStudents()
+			students.sort { $0.firstName < $1.firstName }
 		}
 	}
 	
